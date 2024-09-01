@@ -1,0 +1,70 @@
+/* Existing CSS */
+body {
+    background-color: rgb(240, 207, 163);
+}
+
+#submitBtn, #submitBtn2 {
+    background-color: rgb(10, 10, 69);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#submitBtn:hover, #submitBtn2:hover {
+    background-color: darkblue;
+}
+
+#a, #a2 {
+    text-align: center;
+    margin: 2px;
+    width: 50%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 80px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* New CSS for form-container */
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts space between the boxes */
+    gap: 20px; /* Optional: adds space between the boxes */
+    padding: 20px; /* Optional: adds space around the container */
+}
+
+/* CSS for form-box */
+.form-box {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Space inside the box */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners (optional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow (optional) */
+    flex: 1; /* Allows boxes to grow equally */
+    max-width: 45%; /* Ensures boxes fit side by side */
+}
+
+.form-box label,
+.form-box input,
+.form-box button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+.form-box input {
+    padding: 8px;
+    margin-top: 4px;
+}
+
+.form-box button {
+    padding: 10px;
+    margin-top: 10px;
+}
