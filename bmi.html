@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+
+    <h1 id="a"><b>BMI Value</b></h1><br>
+    <h4>Definition</h4>
+
+    <p><b>BMI (Body Mass Index) is a numerical value calculated from a person's weight and height. 
+        It is used to categorize individuals into different weight ranges, such as underweight, normal weight, overweight, and obese.
+        <br> The formula for calculating BMI is:</b></p>
+
+        <div class="image-container">
+            <img src="BMI Formula.jpg" alt="BMI">
+        </div>     
+        <br>
+
+        <div class="gradient-line"></div>
+
+
+
+        <div class="form-container">
+
+            <div class="form-box">
+                <label id="1Label">Height:</label>
+
+                  <input type="text" id="1TxtBox" placeholder="Enter Your Height">  
+
+                  <select id="1Select">
+                    <option value="A">cm</option>
+                    <option value="B">m</option>
+                  </select>
+    
+    
+                  <br><br>
+    
+                <label id="2Label">Weight:</label>
+                  <input type="text" id="2TxtBox" placeholder="Enter Your Weight">
+
+                  <select id="2Select">
+                    <option value="A">g</option>
+                    <option value="B">Kg</option>
+
+                  </select><br><br><br>
+                
+                <button type="button" id="submitBtn">Find My BMI</button><br><br><br>
+                <label id="3Label"></label>
+            </div>
+    
+        </div>
+
+
+<!-- Gradient line container with indicator -->
+<div class="bmi-gradient-line-container">
+    <div class="bmi-gradient-line">
+        <span class="bmi-label left"><b>18.5</b></span>
+        <span class="bmi-label middle"><b>25.0</b></span>
+        <span class="bmi-label right"><b>30.0</b></span>
+    </div>
+    <div class="bmi-indicator" id="newBmiIndicator"></div>
+</div>
+
+
+
+
+    <script src="bmi.js"></script>
+
+</body>
+</html>

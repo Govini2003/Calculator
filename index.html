@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pythagoras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2 id="a">Pythagoras Theorem</h2><br>
-    <img src="Pythagoras.png" alt="Description of the image"><hr>
+    <h1 id="a"><b>Pythagoras Theorem</b></h1><br>
+    <h4>Definition</h4>
 
-    <h2 id="a">Pythagoras Calculator</h2><br>
+    <p><b>The square of the length of the hypotenuse of a right triangle equals the sum of the squares of the lengths of the other two sides.</b></p>
+    <img src="Pythagoras.png" alt="Pythagoras triangle">
+
+    <div class="gradient-line"></div>
+
+
+    <h1 id="a"><b>Pythagoras Calculator</b></h1><br>
 
     <div class="form-container">
-        <!-- First Form Box -->
+
         <div class="form-box">
-            <label id="aLabel">Side A:</label>
-            <input type="text" id="aTxtBox"><br><br>
-            <label id="bLabel">Side B:</label>
-            <input type="text" id="bTxtBox"><br><br>
+            <label id="1Label">Side 1:</label>
+            <select id="1Select">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+              </select>
+              <input type="text" id="1TxtBox" placeholder="Input the value"><br><br>
+
+
+              <br><br>
+
+            <label id="2Label">Side 2:</label>
+            <select id="2Select">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+              </select>
+              <input type="text" id="2TxtBox" placeholder="Input the value"><br><br>
+            
             <button type="button" id="submitBtn">Submit</button><br><br><br>
-            <label id="cLabel"></label>
-        </div>
-
-        <!-- Second Form Box -->
-
-        <div class="form-box">
-            <label id="aLabel2">Side A or B:</label>
-            <input type="text" id="aTxtBox2"><br><br>
-            <label id="cLabel2">Side C:</label>
-            <input type="text" id="cTxtBox2"><br><br>
-            <button type="button" id="submitBtn2">Submit</button><br><br><br>
-            <label id="bLabel2"></label>
+            <label id="3Label"></label>
         </div>
 
     </div>
