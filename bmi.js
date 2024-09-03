@@ -1,3 +1,17 @@
+//header js
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('home-btn').addEventListener('click', function() {
+]    });
+    document.getElementById('about-btn').addEventListener('click', function() {
+    });
+    document.getElementById('contact-btn').addEventListener('click', function() {
+    });
+});
+
+
+
+
 document.getElementById('submitBtn').addEventListener('click', function() {
     // Get height and weight values
     const heightInput = document.getElementById('1TxtBox').value;
@@ -28,23 +42,72 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     // Calculate BMI
     if (heightInMeters > 0 && weightInKg > 0) {
         const bmi = weightInKg / (heightInMeters * heightInMeters);
-        document.getElementById('3Label').innerHTML = `Your BMI is ${bmi.toFixed(2)} Kgm<sup>-2</sup>`;
+        document.getElementById('3Label').innerText = `Your BMI is ${bmi.toFixed(2)} kgm²`;
+
+        // Update BMI indicator position
+        updateBmiIndicator(bmi);
     } else {
         document.getElementById('3Label').innerText = 'Please enter valid height and weight.';
     }
 });
 
 
+
 function getIndicatorPosition(bmi) {
+    const startPercent = 25; // Starting position of the gradient line in percentage
+    const middlePercent = 50; // Middle of the gradient line in percentage
+    const endPercent = 75; // Ending position of the gradient line in percentage
+
     let position;
-    if (bmi < 18.5) {
-        position = (bmi / 18.5) * 25; // Maps to the first 25% of the gradient line
-    } else if (bmi >= 18.5 && bmi <= 24.9) {
-        position = 25 + ((bmi - 18.5) / (24.9 - 18.5)) * 25; // Maps to the next 25%
-    } else if (bmi >= 25.0 && bmi <= 29.9) {
-        position = 50 + ((bmi - 25.0) / (29.9 - 25.0)) * 25; // Maps to the next 25%
+    if (bmi <= 15.00) {
+        position = startPercent; // Indicator at the start (25% of the screen width)
+    } else if (bmi >= 30.00) {
+        position = endPercent; // Indicator at the end (75% of the screen width)
+    } else if (bmi > 15.00 && bmi < 25.00) {
+        position = startPercent + ((bmi - 15.00) / (25.00 - 15.00)) * (middlePercent - startPercent); // Move within the first part of the gradient line
+    } else if (bmi >= 25.00 && bmi < 30.00) {
+        position = middlePercent + ((bmi - 25.00) / (30.00 - 25.00)) * (endPercent - middlePercent); // Move within the second part of the gradient line
     } else {
-        position = 75 + ((bmi - 30.0) / (40 - 30.0)) * 25; // Maps to the last 25%, assuming a max BMI of 40
+        position = endPercent; // Default to end if out of bounds
     }
-    return Math.min(position, 100); // Ensure the position does not exceed 100%
+    return position; // Return position as a percentage
+}
+
+// Update indicator position function
+function updateBmiIndicator(bmi) {
+    const position = getIndicatorPosition(bmi);
+    const indicator = document.getElementById('newBmiIndicator');
+    indicator.style.display = 'block'; // Always show the indicator
+    indicator.style.left = `${position}%`; // Move indicator based on percentage
+}
+
+
+
+function getBmiCategory(bmi) {
+    if (bmi < 18.5) {
+        return "Underweight";
+    } else if (bmi >= 18.5 && bmi < 25.0) {
+        return "Healthy Weight";
+    } else if (bmi >= 25.0 && bmi < 30.0) {
+        return "Overweight";
+    } else if (bmi >= 30.0) {
+        return "Obesity";
+    } else {
+        return "Invalid BMI";
+    }
+}
+
+
+
+// Update indicator position and message function
+function updateBmiIndicator(bmi) {
+    const position = getIndicatorPosition(bmi);
+    const indicator = document.getElementById('newBmiIndicator');
+    const messageDiv = document.getElementById('bmiMessage');
+
+    indicator.style.display = 'block'; // Always show the indicator
+    indicator.style.left = `${position}%`; // Move indicator based on percentage
+
+    // Set the BMI category message
+    messageDiv.textContent = `BMI Category: ${getBmiCategory(bmi)}`;
 }

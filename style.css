@@ -1,3 +1,73 @@
+/* General reset for header and nav elements */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0c074b; /* Dark blue background */
+    color: white; /* Text color for the header */
+    border-bottom: 3px solid #110c5d; /* Border at the bottom of the header */
+    height: 90px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .logo {
+    height: 50px; /* Adjust the logo size */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.header-logo {
+    margin: 0;
+}
+
+.header-logo .logo {
+    height: 90px; /* Adjust the logo height */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transform: translateX(350px); /* Adjust the value to move the items right */
+    justify-content: center; /* Center items horizontally */
+    display: flex;
+}
+
+.header-nav ul li {
+    margin-left: 30px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.header-nav a:hover {
+    background-color: #110c5d; /* Darker background on hover */
+}
+
+
+
+
+h1{
+    margin: 0;
+    color: #ffffff; /* White for headings in the header */
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace; /* Clean, modern font */
+    display: flex; /* Use flex to ensure proper alignment */
+    align-items: center; /* Center vertically in case of varying logo height */
+}
+
+
 /* General Styles */
 body {
     background-color:rgb(190, 235, 220);
@@ -6,7 +76,7 @@ body {
     padding: 20px;
 }
 
-h1 {
+h2 {
     text-align: center;
     color: #0c074b; /* Dark blue for headings */
     margin-bottom: 10px;

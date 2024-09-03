@@ -1,3 +1,18 @@
+//header js
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('home-btn').addEventListener('click', function() {
+    });
+    document.getElementById('about-btn').addEventListener('click', function() {
+    });
+    document.getElementById('contact-btn').addEventListener('click', function() {
+    });
+});
+
+
+
+
+
 document.getElementById("submitBtn").onclick = function() {
     let side1Select = document.getElementById("1Select").value;
     let side2Select = document.getElementById("2Select").value;
