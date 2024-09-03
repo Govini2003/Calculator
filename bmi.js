@@ -1,17 +1,3 @@
-//header js
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('home-btn').addEventListener('click', function() {
-]    });
-    document.getElementById('about-btn').addEventListener('click', function() {
-    });
-    document.getElementById('contact-btn').addEventListener('click', function() {
-    });
-});
-
-
-
-
 document.getElementById('submitBtn').addEventListener('click', function() {
     // Get height and weight values
     const heightInput = document.getElementById('1TxtBox').value;
@@ -42,7 +28,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     // Calculate BMI
     if (heightInMeters > 0 && weightInKg > 0) {
         const bmi = weightInKg / (heightInMeters * heightInMeters);
-        document.getElementById('3Label').innerText = `Your BMI is ${bmi.toFixed(2)} kgm²`;
+        document.getElementById('3Label').innerText = `Your BMI is ${bmi.toFixed(2)} Kgm⁻²`;
 
         // Update BMI indicator position
         updateBmiIndicator(bmi);

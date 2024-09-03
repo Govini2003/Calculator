@@ -21,9 +21,19 @@ document.getElementById('bmi-btn').addEventListener('click', function() {
 });
 
 document.getElementById('temp-btn').addEventListener('click', function() {
-    alert('Temperature Converter coming soon!');
 });
 
 document.getElementById('wight-btn').addEventListener('click', function() {
-    alert('Weight Converter coming soon!');
+});
+
+document.getElementById('time-btn').addEventListener('click', function() {
+});
+
+document.getElementById('root-btn').addEventListener('click', function() {
+});
+
+document.getElementById('vel-btn').addEventListener('click', function() {
+});
+
+document.getElementById('len-btn').addEventListener('click', function() {
 });
