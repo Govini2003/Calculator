@@ -1,3 +1,18 @@
+//header js
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('home-btn').addEventListener('click', function() {
+    });
+    document.getElementById('about-btn').addEventListener('click', function() {
+    });
+    document.getElementById('contact-btn').addEventListener('click', function() {
+    });
+});
+
+
+
+
+
 document.getElementById('submitBtn').addEventListener('click', function() {
     // Get height and weight values
     const heightInput = document.getElementById('1TxtBox').value;
@@ -28,7 +43,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     // Calculate BMI
     if (heightInMeters > 0 && weightInKg > 0) {
         const bmi = weightInKg / (heightInMeters * heightInMeters);
-        document.getElementById('3Label').innerText = `Your BMI is ${bmi.toFixed(2)} Kgm⁻²`;
+        document.getElementById('3Label').innerText = `Your BMI is ${bmi.toFixed(2)} kg/m²`;
 
         // Update BMI indicator position
         updateBmiIndicator(bmi);
@@ -51,8 +66,8 @@ function getIndicatorPosition(bmi) {
         position = endPercent; // Indicator at the end (75% of the screen width)
     } else if (bmi > 15.00 && bmi < 25.00) {
         position = startPercent + ((bmi - 15.00) / (25.00 - 15.00)) * (middlePercent - startPercent); // Move within the first part of the gradient line
-    } else if (bmi >= 25.00 && bmi < 30.00) {
-        position = middlePercent + ((bmi - 25.00) / (30.00 - 25.00)) * (endPercent - middlePercent); // Move within the second part of the gradient line
+    } else if (bmi >= 25.0 && bmi < 30.00) {
+        position = middlePercent + ((bmi - 25.0) / (30.0 - 25.0)) * (endPercent - middlePercent); // Move within the second part of the gradient line
     } else {
         position = endPercent; // Default to end if out of bounds
     }
@@ -69,20 +84,20 @@ function updateBmiIndicator(bmi) {
 
 
 
+
 function getBmiCategory(bmi) {
     if (bmi < 18.5) {
         return "Underweight";
-    } else if (bmi >= 18.5 && bmi < 25.0) {
+    } else if (bmi >= 18.5 && bmi <= 24.99) {
         return "Healthy Weight";
-    } else if (bmi >= 25.0 && bmi < 30.0) {
+    } else if (bmi >= 25.00 && bmi <= 29.99) {
         return "Overweight";
-    } else if (bmi >= 30.0) {
+    } else if (bmi >= 30.00) {
         return "Obesity";
     } else {
-        return "Invalid BMI";
+        return "Invalid BMI"; // Handle any unexpected values
     }
 }
-
 
 
 // Update indicator position and message function

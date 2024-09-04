@@ -29,7 +29,7 @@ document.getElementById('data-btn').addEventListener('click', function() {
 });
 
 document.getElementById('weight-btn').addEventListener('click', function() {
-    window.location.href = '#';
+    window.location.href = 'weight.html';
 });
 
 document.getElementById('time-btn').addEventListener('click', function() {

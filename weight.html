@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Convertor</title>
+    <link rel="stylesheet" href="weight.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Weight Converter</b></h2><br>
+    
+    <p><b>Welcome to the Weight Converter of Cool Cal! We are thrilled to have you here. 
+        Whether you're converting pounds to kilograms or vice versa, Cool Cal makes the process smooth and simple.
+         Dive into our easy-to-use weight converter and take the hassle out of your calculations. 
+         With Cool Cal, converting weights has never been easier!</b></p>
+
+
+
+    <div class="form-container">
+        <div class="form-box">
+            <form id="weightForm">
+                <label for="weightInput">Enter Weight Value:</label>
+                <input type="number" id="weightInput" name="weightInput" required>
+
+                <label for="inputUnit">Select Input Unit:</label>
+                <select id="inputUnit" name="inputUnit">
+                    <option value="grams">Grams</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="lbs">Pounds (lbs)</option>
+                    <option value="tonnes">Tonnes</option>
+                </select>
+
+                <label for="outputUnit">Select Output Unit:</label>
+                <select id="outputUnit" name="outputUnit">
+                    <option value="grams">Grams</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="lbs">Pounds (lbs)</option>
+                    <option value="tonnes">Tonnes</option>
+                </select>
+
+                <button type="button" onclick="convertWeight()">Convert</button>
+                
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="info-box">
+        <h3>Do You Know?</h3>  
+          <p><strong>Grams (g):</strong> The basic unit of mass in the metric system.</p>
+        <p><strong>Kilograms (kg):</strong> Equals 1,000 grams. Commonly used for everyday measurements.</p>
+        <p><strong>Tonnes:</strong> Equals 1,000,000 grams or 1,000 kilograms. Used for measuring large masses.</p>
+        <p><strong>Pounds (lbs):</strong> Equals 453.592 grams. Commonly used in the United States.</p>
+    </div>
+
+
+
+    <script src="weight.js"></script>
+
+</body>
+</html>
