@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Convertor</title>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Data Converter</b></h2><br>
+
+    <p><b>Welcome to Cool Cal's data conversion tool! Easily convert between various data units like bytes, kilobytes, megabytes, and more.
+         Whether you're working with digital storage or transferring files, our tool ensures quick and accurate conversions. 
+         Simplify your data calculations with Cool Cal,
+         your go-to resource for all things byte-related!</b></p><br>
+
+    <div class="info-box">
+        <h3>Do You Know?</h3>
+        <p>
+            For memory and file sizes, a megabyte is 1,048,576 bytes, not 1,000,000 bytes! Similarly,
+             a kilobyte is 1,024 bytes, not 1,000, and a gigabyte is 1,073,741,824 bytes, not 1,000,000,000. 
+             These numbers are all 'powers of 2', which means 2 multiplied by itself a number of times.
+        </p>
+    </div>
+
+
+    <div class="form-container">
+        <div class="form-box">
+            <form id="dataForm">
+                <label for="dataInput">Enter Data Value:</label>
+                <input type="number" id="dataInput" name="dataInput" required>
+
+                <label for="inputUnit">Select Input Unit:</label>
+                <select id="inputUnit" name="inputUnit">
+                    <option value="Bytes">Bytes</option>
+                    <option value="KB">KB</option>
+                    <option value="MB">MB</option>
+                    <option value="GB">GB</option>
+                    <option value="TB">TB</option>
+                    <option value="PB">PB</option>
+                </select>
+
+                <label for="outputUnit">Select Output Unit:</label>
+                <select id="outputUnit" name="outputUnit">
+                    <option value="Bytes">Bytes</option>
+                    <option value="KB">KB</option>
+                    <option value="MB">MB</option>
+                    <option value="GB">GB</option>
+                    <option value="TB">TB</option>
+                    <option value="PB">PB</option>
+                </select>
+
+                <button type="button" onclick="convertData()">Convert</button>
+                
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+
+<br><br>
+<div class="info-box">
+    <h3>Do You Know?</h3>
+    <p>
+        A yottabyte is the largest unit approved as a standard size by the International System of Units (SI). The yottabyte is about 1 septillion bytes -- or, as an integer, 1,000,000,000,000,000,000,000,000 bytes.
+    </p>
+</div>
+
+
+
+    <script src="data.js"></script>
+
+</body>
+</html>
