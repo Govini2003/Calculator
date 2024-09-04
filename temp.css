@@ -84,45 +84,39 @@ h2 {
 
 }
 
-h4{
-    font-size: 30px;
-}
-
 p {
     margin-top: 6px; 
     font-size: 22px;
     text-align: center;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+
+
+/* Info Box Styles */
+.info-box {
+    border: 1px solid #ddd; 
+    padding: 20px; /* Space inside the box */
+    background-color: #0c074b; /* Dark background color to match the form box */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    max-width: 1000px; /* Max width to match the form box */
+    margin: 20px auto; /* Center the box and add vertical space */
+    width: 80%; /* Adjust width as needed */
+    color: #ffffff; /* text color */
 }
 
-.gradient-line {
-    height: 4px; /* Line thickness */
-    background: linear-gradient(to right, #140350, #05a1e4); /* Gradient colors */
-    border: none; /* Remove any border */
-    margin: 20px 0; /* Spacing around the line */
+.info-box h3 {
+    margin-top: 0;
+    font-size: 30px;
 }
 
-/* Button Styles */
-#submitBtn {
-    background-color: #0066cc; /* Bright blue background for buttons */
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+.info-box p {
+    margin-bottom: 10px;
 }
 
-#submitBtn:hover {
-    background-color: #004d99; /* Darker blue on hover */
-}
+
+
+
 
 /* Form Container Styles */
 .form-container {
@@ -134,7 +128,7 @@ img {
 
 /* Form Box Styles */
 .form-box {
-    border: 1px solid #ddd; /* Light grey border for subtle outline */
+    border: 1px solid #ddd;
     padding: 20px; /* Space inside the box */
     background-color: rgb(25, 13, 77); /* Dark background color */
     border-radius: 12px; /* Rounded corners */
@@ -144,12 +138,11 @@ img {
     width: 30%;
 }
 
-
 /* Label and Input Styles */
 .form-box label {
     display: block;
     margin-bottom: 8px;
-    color: #ffffff; /* Medium gray for labels */
+    color: #ffffff; /* White color for labels */
     font-weight: bold;
 }
 
@@ -167,7 +160,7 @@ img {
 .form-box button {
     width: 100%;
     padding: 12px;
-    background-color: #0066cc; /* Same blue color for consistency */
+    background-color: #0066cc; /* Blue background color for consistency */
     color: white;
     border: none;
     font-size: 16px;
@@ -178,30 +171,17 @@ img {
 }
 
 .form-box button:hover {
-    background-color: #004d99; /* Hover effect consistent with submit button */
+    background-color: #004d99; /* Darker blue on hover */
 }
 
-/* Info Box Styles */
-.info-box {
-    border: 1px solid #ddd; /* Light grey border for subtle outline */
-    padding: 20px; /* Space inside the box */
-    background-color: #0c074b; /* Dark background color to match the form box */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    max-width: 1000px; /* Max width to match the form box */
-    margin: 20px auto; /* Center the box and add vertical space */
-    width: 80%; /* Adjust width as needed */
-    color: #ffffff; /* White text color */
+/* Result Text Styles */
+#result {
+    color: #ffffff; /* White color for result text */
+    font-size: 16px; /* Optional: adjust font size for better readability */
+    margin-top: 15px; /* Space above the result */
+    font-weight: bold;
 }
 
-.info-box h3 {
-    margin-top: 0;
-    font-size: 30px;
-}
-
-.info-box p {
-    margin-bottom: 10px;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
