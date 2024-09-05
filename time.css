@@ -1,0 +1,196 @@
+/* General reset for header and nav elements */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0c074b; /* Dark blue background */
+    color: white; /* Text color for the header */
+    border-bottom: 3px solid #110c5d; /* Border at the bottom of the header */
+    height: 90px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .logo {
+    height: 50px; /* Adjust the logo size */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.header-logo {
+    margin: 0;
+}
+
+.header-logo .logo {
+    height: 90px; /* Adjust the logo height */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transform: translateX(350px); /* Adjust the value to move the items right */
+    justify-content: center; /* Center items horizontally */
+    display: flex;
+}
+
+.header-nav ul li {
+    margin-left: 30px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.header-nav a:hover {
+    background-color: #110c5d; /* Darker background on hover */
+}
+
+
+
+
+h1{
+    margin: 0;
+    color: #ffffff; /* White for headings in the header */
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace; /* Clean, modern font */
+    display: flex; /* Use flex to ensure proper alignment */
+    align-items: center; /* Center vertically in case of varying logo height */
+}
+
+
+/* General Styles */
+body {
+    background-color:rgb(190, 235, 220);
+    font-family: 'Courier New', Courier, monospace; /* Clean, modern font */
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #0c074b; /* Dark blue for headings */
+    margin-bottom: 10px;
+    font-size: 50px;
+
+}
+
+p {
+    margin-top: 6px; 
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
+
+
+/* Form Container Styles */
+.form-container {
+    display: flex;
+    justify-content: center; /* Centers the form box on the page */
+    padding: 10px; /* Space around the container */
+    flex-wrap: wrap; /* Allows form boxes to wrap on smaller screens */
+}
+
+/* Form Box Styles */
+.form-box {
+    border: 1px solid #ddd;
+    padding: 20px; /* Space inside the box */
+    background-color: rgb(25, 13, 77); /* Dark background color */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    max-width: 1000px; /* Max width to maintain a good form size */
+    margin: 10px auto; /* Center the form box and add vertical space */
+    width: 30%;
+}
+
+/* Label and Input Styles */
+.form-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff; /* White color for labels */
+    font-weight: bold;
+}
+
+.form-box input, .form-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    font-size: 14px;
+}
+
+/* Button within Form Box */
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc; /* Blue background color for consistency */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-box button:hover {
+    background-color: #004d99; /* Darker blue on hover */
+}
+
+/* Result Text Styles */
+#result {
+    color: #ffffff; /* White color for result text */
+    font-size: 16px; /* Optional: adjust font size for better readability */
+    margin-top: 15px; /* Space above the result */
+    font-weight: bold;
+}
+
+
+
+
+/* Info Box Styles */
+.info-box {
+    border: 1px solid #ddd; 
+    padding: 20px; /* Space inside the box */
+    background-color: #0c074b; 
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    max-width: 1000px; /* Max width to match the form box */
+    margin: 20px auto; /* Center the box and add vertical space */
+    width: 100%; 
+    color: #ffffff; /* text color */
+}
+
+.info-box h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.info-box p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column; /* Stack form boxes on smaller screens */
+        align-items: center; /* Center form boxes vertically */
+    }
+}
