@@ -33,12 +33,16 @@ document.getElementById('weight-btn').addEventListener('click', function() {
 });
 
 document.getElementById('time-btn').addEventListener('click', function() {
+    window.location.href = 'time.html';
 });
 
 document.getElementById('root-btn').addEventListener('click', function() {
+    window.location.href = 'root.html';
 });
 
 document.getElementById('vel-btn').addEventListener('click', function() {
+    window.location.href = 'vel.html';
+
 });
 
 document.getElementById('vol-btn').addEventListener('click', function() {
