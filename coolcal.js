@@ -42,14 +42,20 @@ document.getElementById('root-btn').addEventListener('click', function() {
 
 document.getElementById('vel-btn').addEventListener('click', function() {
     window.location.href = 'vel.html';
+});
 
+document.getElementById('len-btn').addEventListener('click', function() {
+    window.location.href = 'len.html';
 });
 
 document.getElementById('vol-btn').addEventListener('click', function() {
+    window.location.href = 'vol.html';
 });
 
 document.getElementById('area-btn').addEventListener('click', function() {
+    window.location.href = 'area.html';
 });
 
 document.getElementById('force-btn').addEventListener('click', function() {
+    window.location.href = 'force.html';
 });
