@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Calculator</title>
+    <link rel="stylesheet" href="root.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Root Calculator</b></h2><br>
+
+    <p><b>Welcome to the Root Calculator of Cool Cal! We're thrilled to assist you with your root calculations. 
+        Whether you're finding square roots, cube roots, or any root up to the 10th, Cool Cal makes it easy.
+        Dive into our user-friendly root calculator and let us take the complexity out of your computations. 
+        With Cool Cal, calculating roots is simple and straightforward!</b></p>    
+    
+
+
+        <div class="form-container">
+            <div class="form-box">
+                <label for="number">Enter a Number:</label>
+                <input type="number" id="number" placeholder="Enter a number" required>
+    
+                <label for="root-type">Select Root Type:</label>
+                <select id="root-type">
+                    <option value="2">Square Root</option>
+                    <option value="3">3rd Root</option>
+                    <option value="4">4th Root</option>
+                    <option value="5">5th Root</option>
+                    <option value="6">6th Root</option>
+                    <option value="7">7th Root</option>
+                    <option value="8">8th Root</option>
+                    <option value="9">9th Root</option>
+                    <option value="10">10th Root</option>
+                </select>
+    
+                <button onclick="calculateRoot()">Calculate</button>
+    
+                <p id="result"></p>
+            </div>
+        </div>
+<br>
+
+
+        <div class="info-box">
+            <h3>Do You Know?</h3>  
+            <p><strong>Square Roots:</strong> The square root of a number is a value that, when multiplied by itself, gives the original number. For example, the square root of 9 is 3.</p><br>
+            <p><strong>Cube Roots:</strong> The cube root of a number is a value that, when used in a multiplication three times, gives the original number. For example, the cube root of 27 is 3.</p><br>
+            <p><strong>Perfect Squares:</strong> A perfect square is an integer that is the square of another integer. For example, 16 is a perfect square because it is 4 squared.</p><br>
+            <p><strong>Irrational Roots:</strong> Some roots, like the square root of 2, are irrational numbers—they cannot be expressed as a simple fraction and have non-repeating decimal parts.</p>
+        </div>
+        
+    
+
+
+    <script src="root.js"></script>
+
+</body>
+</html>
