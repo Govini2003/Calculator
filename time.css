@@ -181,8 +181,12 @@ p {
 
 .info-box p {
     margin-bottom: 10px;
+    font-size: 17px;
 }
 
+h3{
+    color: #ffffff;
+}
 
 
 
