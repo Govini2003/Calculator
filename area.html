@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="area.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Area Calculator</b></h2><br>
+    
+    <p><b>Welcome to the Area Calculator and Converter of Cool Cal! We are thrilled to assist you in all your area-related needs. 
+        Whether you’re calculating the area of a room or converting between square meters and square miles, Cool Cal makes it effortless.
+         Dive into our user-friendly area calculator to determine the space of any rectangular area, 
+        and use our converter to switch between various units with ease. With Cool Cal, handling area calculations and conversions is straightforward and precise!</b></p>
+
+    <br>
+
+
+        <div class="form-container">
+            <!-- Area Calculator Form Box -->
+            <div class="form-box">
+                <h3>Area Calculator</h3><br>
+                <label for="length">Length (in meters):</label>
+                <input type="number" id="length" placeholder="Enter length" /><br>
+        
+                <label for="width">Width (in meters):</label>
+                <input type="number" id="width" placeholder="Enter width" /><br><br><br>
+        
+                <button onclick="calculateArea()">Calculate Area</button><br><br>
+                <p id="areaResult"></p>
+            </div>
+        
+            <!-- Area Converter Form Box -->
+            <div class="form-box">
+                <h3>Area Converter</h3>
+                <label for="inputArea">Input Area:</label>
+                <input type="number" id="inputArea" placeholder="Enter area" />
+        
+                <label for="inputUnit">From:</label>
+                <select id="inputUnit">
+                    <option value="nm2">nm²</option>
+                    <option value="microm2">μm²</option>
+                    <option value="mm2">mm²</option>
+                    <option value="cm2">cm²</option>
+                    <option value="m2">m²</option>
+                    <option value="km2">km²</option>
+                    <option value="mi2">mi²</option>
+                </select>
+        
+                <label for="outputUnit">To:</label>
+                <select id="outputUnit">
+                    <option value="nm2">nm²</option>
+                    <option value="microm2">μm²</option>
+                    <option value="mm2">mm²</option>
+                    <option value="cm2">cm²</option>
+                    <option value="m2">m²</option>
+                    <option value="km2">km²</option>
+                    <option value="mi2">mi²</option>
+                </select>
+        
+                <button onclick="convertArea()">Convert Area</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+
+        
+
+        <div class="info-box">
+            <h3>Do You Know?</h3>  
+            <p><strong>Square Nanometers (nm²):</strong> A unit of area measurement on an extremely small scale, commonly used in nanotechnology and material science.</p><br>
+            <p><strong>Square Micrometers (μm²):</strong> Equivalent to 1 million square nanometers. Used to measure microscopic areas in scientific research.</p><br>
+            <p><strong>Square Millimeters (mm²):</strong> Equivalent to 1,000,000 square micrometers. Useful for small-scale measurements, such as in engineering and design.</p><br>
+            <p><strong>Square Centimeters (cm²):</strong> Equivalent to 100 square millimeters. Commonly used for measuring small areas, like the size of a sheet of paper.</p><br>
+            <p><strong>Square Meters (m²):</strong> The standard unit for measuring area in most applications, including real estate and construction.</p><br>
+            <p><strong>Square Kilometers (km²):</strong> Equivalent to 1 million square meters. Often used for measuring larger land areas, such as countries or regions.</p><br>
+            <p><strong>Square Miles:</strong> A unit used primarily in the United States for large areas of land. Equivalent to approximately 2.59 square kilometers.</p>
+        </div>
+        
+    
+
+
+    <script src="area.js"></script>
+
+</body>
+</html>

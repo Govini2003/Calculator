@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Calculator</title>
+    <link rel="stylesheet" href="vol.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Volume Calculator</b></h2><br>
+    
+    <p><b>Welcome to the Volume Calculator and Converter of Cool Cal! We're excited to assist you with all your volume-related calculations. 
+        Whether you're converting between cubic meters, cubic centimeters, or any other units, Cool Cal simplifies the process. 
+        Dive into our user-friendly volume converter and let us make your calculations easier than ever. 
+        With Cool Cal, managing volume conversions is smooth and hassle-free!</b></p>
+
+    
+
+        <div class="form-container">
+            <!-- Volume Calculator -->
+            <div class="form-box">
+                <h3>Volume Calculator</h3>
+                <label for="length">Length (m):</label>
+                <input type="number" id="length" placeholder="Enter length in meters">
+                
+                <label for="width">Width (m):</label>
+                <input type="number" id="width" placeholder="Enter width in meters">
+                
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" placeholder="Enter height in meters">
+                
+                <button onclick="calculateVolume()">Calculate Volume</button>
+                <p id="volumeResult"></p>
+            </div>
+        
+            <!-- Volume Converter -->
+            <div class="form-box">
+                <h3>Volume Converter</h3>
+                <label for="inputVolume">Volume:</label>
+                <input type="number" id="inputVolume" placeholder="Enter volume">
+                
+                <label for="unitFrom">From:</label>
+                <select id="unitFrom">
+                    <option value="m3">Cubic Meters (m³)</option>
+                    <option value="cm3">Cubic Centimeters (cm³)</option>
+                    <option value="mm3">Cubic Millimeters (mm³)</option>
+                    <option value="km3">Cubic Kilometers (km³)</option>
+                    <option value="microm3">Cubic Micrometers (μm³)</option>
+                    <option value="cubicMiles">Cubic Miles</option>
+                </select>
+                
+                <label for="unitTo">To:</label>
+                <select id="unitTo">
+                    <option value="m3">Cubic Meters (m³)</option>
+                    <option value="cm3">Cubic Centimeters (cm³)</option>
+                    <option value="mm3">Cubic Millimeters (mm³)</option>
+                    <option value="km3">Cubic Kilometers (km³)</option>
+                    <option value="microm3">Cubic Micrometers (μm³)</option>
+                    <option value="cubicMiles">Cubic Miles</option>
+                </select>
+        
+                <button onclick="convertVolume()">Convert Volume</button>
+                <p id="convertedResult"></p>
+            </div>
+        </div>
+        
+<br>
+
+
+
+        <div class="info-box">
+            <h3>Do You Know?</h3>  
+            <p><strong>Cubic Meter (m<sup>3</sup>):</strong> The SI unit for volume, used to measure larger spaces such as rooms or containers.</p><br>
+            <p><strong>Cubic Centimeter (cm<sup>3</sup>):</strong> Equals 0.000001 cubic meters. Often used for smaller volumes, like liquid measurements in medical and scientific fields.</p><br>
+            <p><strong>Cubic Kilometer (km<sup>3</sup>):</strong> A huge unit for measuring volumes of large areas, such as oceans or lakes. One cubic kilometer equals 1 billion cubic meters.</p><br>
+            <p><strong>Liters (L):</strong> Commonly used for liquid measurements. One liter equals 1,000 cubic centimeters.</p><br>
+            <p><strong>Milliliters (mL):</strong> Equals 0.001 liters or 1 cubic centimeter. Used for small quantities of liquids.</p>
+        </div>
+        
+
+
+    <script src="vol.js"></script>
+
+</body>
+</html>
