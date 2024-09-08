@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Calculator</title>
+    <link rel="stylesheet" href="force.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Force Calculator</b></h2><br>
+    
+    <p><b>Welcome to the Force Calculator of Cool Cal! We are thrilled to assist you with calculating force using the fundamental formula F = ma. 
+        Whether you need to find force, mass, or acceleration, Cool Cal simplifies your calculations with ease. Select the inputs you have—force and mass, mass and acceleration,
+         or force and acceleration—and let our tool do the rest. With Cool Cal, understanding and applying the principles of physics has never been so straightforward!</b></p>
+         <br>
+
+
+
+        <div class="form-container">
+            <div class="form-box">
+                <form id="forceForm">
+                    <label for="input1">Select the known values:</label>
+                    <select id="known1" name="known1">
+                        <option value="" disabled selected>Select value</option>
+                        <option value="F">Force (N)</option>
+                        <option value="m">Mass (Kg)</option>
+                        <option value="a">Acceleration (m/s²)</option>
+                    </select>
+    
+                    <label for="value1">Enter the first known value:</label>
+                    <input type="number" id="value1" name="value1" step="any">
+    
+                    <label for="known2">Select the second known value:</label>
+                    <select id="known2" name="known2">
+                        <option value="" disabled selected>Select value</option>
+                        <option value="F">Force (N)</option>
+                        <option value="m">Mass (Kg)</option>
+                        <option value="a">Acceleration (m/s²)</option>
+                    </select>
+    
+                    <label for="value2">Enter the second known value:</label>
+                    <input type="number" id="value2" name="value2" step="any">
+    
+                    <button type="button" onclick="calculateForce()">Calculate</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Newton's First Law:</h3>  
+                <p>An object at rest stays at rest, and an object in motion stays in motion at a constant velocity unless acted upon by an external force. This is also known as the law of inertia.</p>
+            </div>
+            <div class="info-box">
+                <h3>Newton's Second Law:</h3>  
+                <p>The acceleration of an object is directly proportional to the net force acting on the object and inversely proportional to its mass. This is expressed with the formula F = ma.</p>
+            </div>
+            <div class="info-box">
+                <h3>Newton's Third Law:</h3>  
+                <p>For every action, there is an equal and opposite reaction. This means that any force exerted on a body will result in an equal force exerted in the opposite direction.</p>
+            </div>
+        </div>
+        <br><br>
+    
+
+
+    <script src="force.js"></script>
+
+</body>
+</html>
