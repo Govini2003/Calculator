@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="len.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Length Converter</b></h2><br>
+    
+    <p><b>Welcome to the Length Converter of Cool Cal! We're thrilled to assist you with all your length conversions. 
+        Whether you're converting meters to kilometers, miles to centimeters, or anything in between, Cool Cal makes it seamless. 
+        Dive into our user-friendly length converter and simplify your calculations. 
+        With Cool Cal, managing length conversions is easier than ever!</b></p><br>
+    
+
+
+        <div class="form-box">
+            <label for="inputValue">Enter Length:</label>
+            <input type="number" id="inputValue" placeholder="Enter value">
+
+            <label for="inputUnit">Select Input Unit:</label>
+            <select id="inputUnit">
+                <option value="m">Meter (m)</option>
+                <option value="cm">Centimeter (cm)</option>
+                <option value="km">Kilometer (km)</option>
+                <option value="mm">Millimeter (mm)</option>
+                <option value="microm">Micrometer (μm)</option>
+                <option value="nm">Nanometer (nm)</option>
+                <option value="miles">Miles</option>
+            </select>
+
+            <label for="outputUnit">Select Output Unit:</label>
+            <select id="outputUnit">
+                <option value="m">Meter (m)</option>
+                <option value="cm">Centimeter (cm)</option>
+                <option value="km">Kilometer (km)</option>
+                <option value="mm">Millimeter (mm)</option>
+                <option value="microm">Micrometer (μm)</option>
+                <option value="nm">Nanometer (nm)</option>
+                <option value="miles">Miles</option>
+            </select>
+
+            <button onclick="convertLength()">Convert</button>
+
+            <h3>Converted Length: <span id="result"></span></h3>
+        </div>
+    </div>
+<br>
+
+
+
+
+    <div class="info-box">
+        <h3>Do You Know?</h3>  
+        <p><strong>Meter (m):</strong> The base unit of length in the International System of Units (SI). Originally defined in 1793 as one ten-millionth of the distance from the equator to the North Pole.</p><br>
+        <p><strong>Kilometer (km):</strong> Equals 1,000 meters. Commonly used to measure longer distances, such as the length of roads or the distance between cities.</p><br>
+        <p><strong>Centimeter (cm):</strong> Equals 0.01 meters. Widely used in everyday measurements, especially in fields like tailoring and interior design.</p><br>
+        <p><strong>Millimeter (mm):</strong> Equals 0.001 meters. Often used in engineering, manufacturing, and precision measurements.</p><br>
+        <p><strong>Micrometer (µm):</strong> Equals 1×10⁻⁶ meters. Essential in scientific fields like biology and materials science for measuring microscopic structures.</p><br>
+        <p><strong>Nanometer (nm):</strong> Equals 1×10⁻⁹ meters. Used primarily in nanotechnology and chemistry to measure atomic and molecular scales.</p><br>
+        <p><strong>Mile:</strong> Equals approximately 1,609.34 meters. Commonly used in the United States and the United Kingdom for measuring longer distances like road travel.</p><br>
+        <p><strong>Light-Year:</strong> The distance light travels in one year, about 9.46 trillion kilometers. Used in astronomy to express distances between stars and galaxies.</p>
+    </div>
+    
+
+
+    <script src="len.js"></script>
+
+</body>
+</html>
