@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Calcultor</title>
+    <link rel="stylesheet" href="vel.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <header class="header">
+    <div class="header-logo">
+        <img src="Cool Cal.png" alt="Cool Cal Logo" class="logo">
+        <h1>Cool Cal by Govini</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="coolcal.html" id="home-btn"><b>Home</b></a></li>
+            <li><a href="#about" id="about-btn"><b>About Us</b></a></li>
+            <li><a href="#contact" id="contact-btn"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+    </header>
+
+
+    <h2><b>Velocity Calculator</b></h2><br>
+    
+    <p><b>Welcome to the Velocity Calculator and Converter of Cool Cal! We're here to make your velocity calculations and conversions simple and straightforward. 
+        Whether you're calculating speed or converting between units like m/s, km/h, or mph, Cool Cal ensures the process is smooth and hassle-free. 
+        Dive into our user-friendly tools and let us help you get the results you need with ease!</b></p><br>
+
+
+
+     <div class="form-box">
+        <label for="distance">Distance (meters):</label>
+        <input type="number" id="distance" placeholder="Enter distance in meters">
+        <label for="time">Time (seconds):</label>
+        <input type="number" id="time" placeholder="Enter time in seconds">
+        <button onclick="calculateVelocity()">Calculate Velocity</button>
+        <p id="velocityResult"></p>
+    </div>
+<br>
+
+    <h2>Velocity Converter</h2>
+
+    <!-- Velocity Converter Form -->
+    <div class="form-box">
+        <label for="velocity">Velocity:</label>
+        <input type="number" id="velocityInput" placeholder="Enter velocity">
+        <label for="fromUnit">From Unit:</label>
+        <select id="fromUnit">
+            <option value="m/s">m/s</option>
+            <option value="km/h">km/h</option>
+            <option value="mph">mph</option>
+        </select>
+        <label for="toUnit">To Unit:</label>
+        <select id="toUnit">
+            <option value="m/s">m/s</option>
+            <option value="km/h">km/h</option>
+            <option value="mph">mph</option>
+        </select>
+        <button onclick="convertVelocity()">Convert Velocity</button>
+        <p id="conversionResult"></p>
+    </div>
+</div>
+
+<br>
+
+
+
+<div class="info-box">
+    <h3>Do You Know?</h3>  
+    <p><strong>Meters per second (m/s):</strong> The SI unit for velocity, often used in physics to express speed.</p><br>
+    <p><strong>Kilometers per hour (km/h):</strong> Commonly used in everyday life, especially in transportation. 1 m/s is equal to 3.6 km/h.</p><br>
+    <p><strong>Miles per hour (mph):</strong> A unit of speed used primarily in the United States and the United Kingdom. 1 mph is approximately 1.609 km/h.</p><br>
+    <p><strong>Speed of Light:</strong> The ultimate speed limit of the universe, approximately 299,792,458 meters per second or about 186,282 miles per hour.</p>
+</div>
+<br>
+
+
+    <script src="vel.js"></script>
+
+</body>
+</html>
